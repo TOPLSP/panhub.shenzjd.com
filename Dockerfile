@@ -19,7 +19,7 @@ COPY . .
 
 # 使用 npm 安装所有依赖（包括编译 better-sqlite3）
 # 使用 --prefer-offline 和 --no-audit 加速构建
-RUN npm ci --prefer-offline --no-audit
+RUN npm install --prefer-offline --no-audit --no-fund
 
 # 验证 better-sqlite3 编译结果
 RUN echo "🔍 检查 better-sqlite3 编译文件..." && \
